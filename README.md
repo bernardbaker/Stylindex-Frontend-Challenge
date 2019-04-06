@@ -34,7 +34,7 @@ On the command line (terminal) at the projects top level folder run `yarn start`
 
 ### Build the project
 
-`yarn build` to run tests.
+`yarn build` to build the project.
 
 
 ### Serve the project
