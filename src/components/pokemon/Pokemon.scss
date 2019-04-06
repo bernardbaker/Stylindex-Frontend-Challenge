@@ -1,0 +1,120 @@
+.pokemon-listing {
+    list-style: none;
+    border: 0.5em solid hsla(60, 100, 50, 0.4);
+    border-radius: 2em;
+    display: flex;
+    margin: 1em;
+    padding: 0.5em;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fffad1+0,fefefe+16 */
+    background: #fffad1; /* Old browsers */
+    background: -moz-linear-gradient(45deg, hsla(53,100%,91%,1) 0%, hsla(0,0%,100%,1) 16%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, hsla(53,100%,91%,1) 0%,hsla(0,0%,100%,1) 16%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, hsla(53,100%,91%,1) 0%,hsla(0,0%,100%,1) 16%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffad1', endColorstr='#fefefe',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    img {
+        padding: 0.5em;
+    }
+
+    .details {
+        padding-top: 0.5em;
+        margin-left: 0.5em;
+
+        span {
+            display: inline-block;
+        }
+
+        .bold-detail-text {
+            font-weight: 700;
+        }
+
+        .detail-type {
+            color: hsla(23, 100%, 50%, 1);
+            font-weight: 700;
+            margin-bottom: 0.4em;
+        }
+
+        .detail-value {
+            font-size: 90%;
+        }
+
+        .detail-more-info {
+            font-size: 200%;
+            font-weight: 700;
+
+            display: block;
+            margin-top: 0.5em;
+
+            a {
+                color: inherit;
+                text-decoration: none;
+
+                padding: 0.25em;
+
+                border: 0.1em solid hsla(23, 100%, 50%, 1);
+                border-right: none;
+                border-bottom: none;
+                border-radius: 0.5em;
+
+                background-color: hsla(60, 100, 50, 0.4);
+            }
+            a:hover {
+                color: hsla(23, 100%, 50%, 1);
+                background-color: hsla(60, 100, 50, 0.6);
+            }
+        }
+
+        .small-detail-text {
+            font-size: 70%;
+        }
+
+        ul li.pokemon-listing {
+            align-items: center;
+            margin: 0 auto;
+            margin-bottom: 4em;
+            padding: 0;
+            border: none;
+            border-left: 0.2em solid hsla(20, 100, 60, 0.4);
+            background: hsl(100,100,100);
+        }
+    }
+}
+
+@media all and (max-width:1000px) {
+    .pokemon-listing {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        .details {
+    
+            .detail-more-info {
+                font-size: 100%;
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    height: 2em;
+                    border: none;
+                    background-color: hsla(60, 100, 50, 0.4);
+                }
+            }
+
+            ul li.pokemon-listing {
+                align-items: center;
+                width: 70vw;
+                margin: 0 auto;
+                margin-bottom: 4em;
+                padding: 0;
+                border: none;
+                border-top: 0.2em solid hsla(20, 100, 60, 0.4);
+            }
+        }
+
+    }
+
+}
