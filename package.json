@@ -17,7 +17,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --coverage --updateSnapshot --watch",
+    "test": "react-scripts test --coverage --updateSnapshot --watch --collectCoverageFrom=src/**/*js --collectCoverageFrom=!src/serviceWorker.js",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
